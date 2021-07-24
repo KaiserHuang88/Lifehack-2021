@@ -21,3 +21,5 @@ Next, get your own telegram bot token from BotFather in telegram
 Input the token into our source code under the following line: token = "[INSERT_TOKEN_HERE]"
 
 Run the code and your bot should now function! (Tested on Google Colaboratory)
+
+**Due to testing convenience, the time period for our work rest cycle has been set to 15 seconds : 5 seconds, to get the full experience, go the lines 88-91 of our source code, comment out lines 88-89 and uncomment lines 90-91. Cheers!**
