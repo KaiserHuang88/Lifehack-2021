@@ -54,7 +54,6 @@ def add(update: Update, _: CallbackContext) -> None:
     todo = all_words.split(" ", 1)[1]
     todoList[userID][todo] = 0
     update.message.reply_text(f"The following task has been added to the list: {todo}")
-    #add new todo item together with total time taken = 0
 
 
 def view(update: Update, _: CallbackContext) -> None:
@@ -88,6 +87,8 @@ def begin(update: Update, _: CallbackContext) -> None:
     update.message.reply_text(f"Now beginning on the following task: {todo}")
     _.job_queue.run_once(workDoneAlarm, 15, name = str(userID) + "work")
     _.job_queue.run_once(restDoneAlarm, 20, name = str(userID) + "rest")
+#     _.job_queue.run_once(workDoneAlarm, 45 * 60, name = str(userID) + "work")
+#     _.job_queue.run_once(restDoneAlarm, 60 * 60, name = str(userID) + "rest")
 
 
 def terminateTask(name: str, _: CallbackContext) -> bool:
