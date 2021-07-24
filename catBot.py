@@ -14,7 +14,7 @@ logging.basicConfig(
 
 logger = logging.getLogger(__name__)
 
-token = "1911430517:AAEpX7XJYj0X9CBAsW6BgQhdJ3MOHz6JeH0"
+token = "[INSERT_TOKEN_HERE]"
 
 todoList = {}
 
